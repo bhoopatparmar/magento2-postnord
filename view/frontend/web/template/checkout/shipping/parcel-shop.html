@@ -1,0 +1,22 @@
+<div class="postnord-parcelshop">
+    <div class="shipping-method-content">
+        <div class="title">
+            <span translate="'Find a service point'"></span>
+        </div>
+        <div class="content-top">
+            <div class="ws-flex">
+                <div class="fieldset">
+                    <!-- ko foreach: getRegion('postnord-parcel-shop-form-fields') -->
+                    <!-- ko template: getTemplate() --><!-- /ko -->
+                    <!-- /ko -->
+                </div>
+                <button class="action primary" data-bind="click: openModal">
+                    <span>
+                        <span translate="'Search'"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="map-wrapper" data-bind="afterRender: $parent.setMapElement"></div>
+    </div>
+</div>
